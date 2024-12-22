@@ -1,6 +1,5 @@
 const tg = window.Telegram.WebApp;
 tg.ready();
-
 document.addEventListener('DOMContentLoaded', () => {
     const waitAmountDisplay = document.getElementById('wait-amount');
     const dynamicTextDisplay = document.getElementById('dynamic-text');
@@ -51,5 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
       waitAmountDisplay.textContent = currentWaitAmount + 1000;
       communityTaskButton.disabled = true;
       communityTaskButton.textContent = 'Subscribed! (+1000 WAIT)';
+      tg.sendData('community_task_completed'); // отправляем событие в бот
     });
 });

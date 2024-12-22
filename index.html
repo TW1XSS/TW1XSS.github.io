@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAIT App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="leaderboard-rank">
+                🏆 Your Rank: <span id="rank">1</span>
+            </div>
+            <div class="icon">
+                ⏳
+            </div>
+            <div class="wait-tokens">
+                WAIT: <span id="wait-amount"></span>
+            </div>
+            <div class="wait-text">
+                <p id="dynamic-text">Let's wait, let's see what happens</p>
+            </div>
+            <div class="tasks">
+                <h3>Tasks</h3>
+                <div class="task">
+                    <button id="community-task" class="task-button">Subscribe to community (+1000 WAIT)</button>
+                </div>
+                <div class="task">
+                    <button id="new-year-task" class="task-button" disabled>New Year Task (Coming Soon)</button>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-nav">
+            <button id="leaderboard-btn" class="nav-btn">Leaderboard</button>
+            <button id="wait-btn" class="nav-btn active">WAIT</button>
+            <button id="friends-btn" class="nav-btn">Friends</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

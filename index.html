@@ -1,18 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wait Mini-App</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Мини-приложение Wait</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="app-container">
-        <h1>Welcome to Wait Mini-App</h1>
-        <p>Loading...</p>
-    </div>
+    <div class="container">
+        <button class="ton-wallet-button">Кошелек TON адрес</button>
 
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <script src="script.js"></script>
+        <div class="leaderboard-rank">
+          🏆 #1
+        </div>
+
+        <div class="icon-container">
+          <img src="img/wait_icon.png" alt="Иконка WAIT" class="wait-icon">
+        </div>
+
+        <div class="wait-title">WAIT</div>
+
+        <div class="wait-count" id="waitCount"></div>
+
+        <div class="daily-message" id="dailyMessage">
+        </div>
+
+        <div class="task-list">
+            <div class="task-item">
+                <span class="task-name">Подписаться на сообщество</span>
+                <span class="task-reward">1000</span>
+            </div>
+        </div>
+        
+        <nav class="bottom-nav">
+          <button class="nav-button" id="leaderboard-btn">Таблица лидеров</button>
+          <button class="nav-button active" id="wait-btn">WAIT</button>
+          <button class="nav-button" id="friends-btn">Друзья</button>
+        </nav>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

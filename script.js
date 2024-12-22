@@ -1,3 +1,6 @@
+const tg = window.Telegram.WebApp;
+tg.ready();
+
 document.addEventListener('DOMContentLoaded', () => {
     const waitAmountDisplay = document.getElementById('wait-amount');
     const dynamicTextDisplay = document.getElementById('dynamic-text');
